@@ -22,6 +22,7 @@ const update = async user => {
 
 const remove = async id => {
   const index = memoryDB.users.findIndex(el => el.id === id);
+  console.log(index);
   if (index > -1) {
     memoryDB.users = memoryDB.users.filter(e => e.id !== id);
     return true;
