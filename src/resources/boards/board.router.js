@@ -29,4 +29,13 @@ router.route('/:id').put(async (req, res) => {
   else res.sendStatus(400);
 });
 
+router.route('/:id').delete(async (req, res) => {
+  const board = await boardsService.remove(req.params.id);
+  if (board) {
+    res.sendStatus(204);
+  } else {
+    res.sendStatus(404);
+  }
+});
+
 module.exports = router;

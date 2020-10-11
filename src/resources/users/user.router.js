@@ -32,8 +32,12 @@ router.route('/:id').put(async (req, res) => {
 
 router.route('/:id').delete(async (req, res) => {
   const user = await usersService.remove(req.params.id);
-  if (user) res.sendStatus(204);
-  else res.sendStatus(404);
+  console.log(user);
+  if (user) {
+    res.sendStatus(204);
+  } else {
+    res.sendStatus(404);
+  }
 });
 
 module.exports = router;
