@@ -39,4 +39,8 @@ const remove = async (boardId, id) => {
   return false;
 };
 
-module.exports = { getAll, create, get, update, remove };
+const removeByBoardId = async id => {
+  memoryDB.tasks = memoryDB.tasks.filter(task => task.boardId !== id);
+};
+
+module.exports = { getAll, create, get, update, remove, removeByBoardId };

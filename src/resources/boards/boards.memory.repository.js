@@ -29,7 +29,7 @@ const update = async board => {
 const remove = async id => {
   const index = memoryDB.boards.findIndex(el => el.id === id);
   if (index > -1) {
-    memoryDB.boards = memoryDB.boards.filter(e => e.id !== id);
+    memoryDB.boards = memoryDB.boards.filter(board => board.id !== id);
     return true;
   }
   return false;

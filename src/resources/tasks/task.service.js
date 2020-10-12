@@ -10,4 +10,6 @@ const get = (boardId, id) => tasksRepo.get(boardId, id);
 
 const remove = (boardId, taskId) => tasksRepo.remove(boardId, taskId);
 
-module.exports = { getAll, create, get, update, remove };
+const removeByBoardId = boardId => tasksRepo.removeByBoardId(boardId);
+
+module.exports = { getAll, create, get, update, remove, removeByBoardId };

@@ -23,10 +23,13 @@ const update = async user => {
 const remove = async id => {
   const index = memoryDB.users.findIndex(el => el.id === id);
   if (index > -1) {
-    memoryDB.users = memoryDB.users.filter(e => e.id !== id);
+    memoryDB.users = memoryDB.users.filter(user => user.id !== id);
+    memoryDB.tasks = memoryDB.tasks.map(task =>
+      task.userId === id ? { ...task, userId: null } : task
+    );
     return true;
   }
-  return null;
+  return false;
 };
 
 module.exports = { getAll, get, create, update, remove };
