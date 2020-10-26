@@ -1,35 +1,45 @@
-const memoryDB = require('../../common/memoryDB');
+const { Task } = require('../tasks/task.model');
+const { User } = require('./user.model');
 
 const getAll = async () => {
-  // TODO: mock implementation. should be replaced during task development
-  return memoryDB.users;
+  // throw new Error(); //error 500
+  const users = await User.find({});
+
+  return users;
 };
 
-const get = async id => {
-  return memoryDB.users.find(el => el.id === id);
+const createUser = async user => {
+  const createdUser = await new User(user);
+  await createdUser.save();
+
+  return createdUser;
 };
 
-const create = async user => {
-  return memoryDB.users.push(user);
+const getUser = async id => {
+  const user = await User.findById(id);
+
+  return user;
 };
 
-const update = async user => {
-  const { id } = user;
-  return memoryDB.users.map((item, index) => {
-    if (id === item.id) return (memoryDB.users[index] = user);
+const updateUser = async (id, updatedUser) => {
+  const user = await User.findOneAndUpdate({ _id: id }, updatedUser, {
+    new: true
   });
+
+  return user;
 };
 
-const remove = async id => {
-  const index = memoryDB.users.findIndex(el => el.id === id);
-  if (index > -1) {
-    memoryDB.users = memoryDB.users.filter(user => user.id !== id);
-    memoryDB.tasks = memoryDB.tasks.map(task =>
-      task.userId === id ? { ...task, userId: null } : task
-    );
-    return true;
-  }
-  return false;
+const deleteUser = async id => {
+  await Task.updateMany({ userId: id }, { userId: null });
+  await User.findByIdAndDelete(id);
+
+  return 'User and user tasks have been deleted';
 };
 
-module.exports = { getAll, get, create, update, remove };
+module.exports = {
+  getAll,
+  getUser,
+  createUser,
+  updateUser,
+  deleteUser
+};

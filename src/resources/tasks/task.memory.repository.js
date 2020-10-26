@@ -1,46 +1,38 @@
-const memoryDB = require('../../common/memoryDB');
+const { Task } = require('./task.model');
 
-const getAll = async id => {
-  return memoryDB.tasks.filter(task => task.boardId === id);
+const getAll = async boardId => {
+  const tasks = await Task.find({ boardId });
+
+  return tasks;
 };
 
-const get = async (boardId, id) => {
-  return memoryDB.tasks.find(el => el.boardId === boardId && el.id === id);
+const createTask = async (boardId, task) => {
+  task.boardId = boardId;
+  const createdTask = await new Task(task);
+  await createdTask.save();
+
+  return createdTask;
 };
 
-const update = async task => {
-  const { id, boardId } = task;
-  const index = memoryDB.tasks.findIndex(
-    el => el.id === id && el.boardId === boardId
+const getTask = async (boardId, taskId) => {
+  const task = await Task.findOne({ _id: taskId, boardId });
+
+  return task;
+};
+
+const updateTask = async (boardId, taskId, updatedTask) => {
+  const task = await Task.findOneAndUpdate(
+    { _id: taskId, boardId },
+    updatedTask,
+    { new: true }
   );
-  if (index > -1) {
-    memoryDB.tasks = [
-      ...memoryDB.tasks.slice(0, index),
-      task,
-      ...memoryDB.tasks.slice(index + 1)
-    ];
-    return true;
-  }
-  return false;
+
+  return task;
 };
 
-const create = async task => {
-  memoryDB.tasks.push(task);
+const deleteTask = async (boardId, taskId) => {
+  await Task.findOneAndDelete({ _id: taskId, boardId });
+  return 'Task has been deleted';
 };
 
-const remove = async (boardId, id) => {
-  const index = memoryDB.tasks.findIndex(
-    el => el.id === id && el.boardId === boardId
-  );
-  if (index > -1) {
-    memoryDB.tasks = memoryDB.tasks.filter(task => task.id !== id);
-    return true;
-  }
-  return false;
-};
-
-const removeByBoardId = async id => {
-  memoryDB.tasks = memoryDB.tasks.filter(task => task.boardId !== id);
-};
-
-module.exports = { getAll, create, get, update, remove, removeByBoardId };
+module.exports = { getAll, getTask, createTask, updateTask, deleteTask };

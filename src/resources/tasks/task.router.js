@@ -1,48 +1,92 @@
-const router = require('express').Router();
-const Tasks = require('./task.model');
-const taskService = require('./task.service');
+const router = require('express').Router({ mergeParams: true });
+const tasksService = require('./task.service');
+const boardsService = require('../boards/board.service');
+const boardService = require('../boards/board.service');
+const { Task } = require('./task.model');
 
-router.route('/:boardId/tasks').get(async (req, res) => {
-  const tasks = await taskService.getAll(req.params.boardId);
-  res.status(200).send(tasks);
-});
+router.route('/').get(async (req, res, next) => {
+  try {
+    const board = await boardsService.getBoard(req.params.boardId);
 
-router.route('/:boardId/tasks/:taskId').get(async (req, res) => {
-  const tasks = await taskService.get(req.params.boardId, req.params.taskId);
-  console.log(req.params);
-  if (tasks) {
-    res.status(200).send(tasks);
-  } else {
-    res.sendStatus(404);
+    if (board) {
+      const tasks = await tasksService.getAll(req.params.boardId);
+      res.json(tasks.map(task => Task.toResponse(task)));
+    } else {
+      const err = new Error('Not Found');
+      err.status = 404;
+      return next(err);
+    }
+  } catch (err) {
+    return next(err);
   }
 });
 
-router.route('/:boardId/tasks/:taskId').put(async (req, res) => {
-  const task = {
-    ...req.body,
-    id: req.params.taskId,
-    boardId: req.params.boardId
-  };
-  const isUpdated = await taskService.update(task);
-  if (isUpdated) {
-    res.status(200).send(task);
-  } else {
-    res.sendStatus(404);
+router.route('/:taskId').get(async (req, res, next) => {
+  try {
+    const task = await tasksService.getTask(
+      req.params.boardId,
+      req.params.taskId
+    );
+
+    if (task) res.status(200).send(Task.toResponse(task));
+    else {
+      const err = new Error('Not Found');
+      err.status = 404;
+      return next(err);
+    }
+  } catch (err) {
+    return next(err);
   }
 });
 
-router.route('/:boardId/tasks').post(async (req, res) => {
-  const task = new Tasks({ ...req.body, boardId: req.params.boardId });
-  await taskService.create(task);
-  res.status(200).send(task);
+router.route('/').post(async (req, res, next) => {
+  try {
+    const task = await tasksService.createTask(req.params.boardId, req.body);
+    const board = await boardService.getBoard(req.params.boardId);
+    if (board) res.status(200).send(Task.toResponse(task));
+    else {
+      const err = new Error('Not Found');
+      err.status = 404;
+      return next(err);
+    }
+  } catch (err) {
+    return next(err);
+  }
 });
 
-router.route('/:boardId/tasks').delete(async (req, res) => {
-  const task = await taskService.remove(req.params.boardId, req.params.taskId);
-  if (task) {
-    res.sendStatus(204);
-  } else {
-    res.sendStatus(404);
+router.route('/:taskId').put(async (req, res, next) => {
+  try {
+    const task = await tasksService.updateTask(
+      req.params.boardId,
+      req.params.taskId,
+      req.body
+    );
+    if (task) res.status(200).send(Task.toResponse(task));
+    else {
+      const err = new Error('Not Found');
+      err.status = 404;
+      return next(err);
+    }
+  } catch (err) {
+    return next(err);
+  }
+});
+
+router.route('/:taskId').delete(async (req, res, next) => {
+  try {
+    const message = await tasksService.deleteTask(
+      req.params.boardId,
+      req.params.taskId
+    );
+
+    if (message) res.status(204).send(message);
+    else {
+      const err = new Error('Not Found');
+      err.status = 404;
+      return next(err);
+    }
+  } catch (err) {
+    return next(err);
   }
 });
 

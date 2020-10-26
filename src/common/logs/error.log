@@ -1,0 +1,212 @@
+error: 
+    TIME: Mon Oct 26 2020 10:29:48 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967aeb11d3700aa4defcda
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\boards\board.router.js:19:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Mon Oct 26 2020 10:29:49 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967aec11d3700aa4defcdb/tasks/5f967aec11d3700aa4defcdd
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Mon Oct 26 2020 10:29:49 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967aec11d3700aa4defcdb/tasks/5f967aec11d3700aa4defcde
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Mon Oct 26 2020 10:29:49 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967aec11d3700aa4defcdb/tasks/5f967aec11d3700aa4defcdc
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Mon Oct 26 2020 10:29:49 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967aec11d3700aa4defcdb/tasks/5f967aec11d3700aa4defcdf
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Mon Oct 26 2020 10:29:49 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967aec11d3700aa4defcdb/tasks/5f967aec11d3700aa4defce0
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Mon Oct 26 2020 10:29:52 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967aed11d3700aa4defce1/tasks/5f967aee11d3700aa4defce2
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+  TIME: Mon Oct 26 2020 10:30:32 GMT+0300 (Москва, стандартное время)
+  ERROR: MongoError: bad auth : Authentication failed.
+  ERROR PROMISE REJECTION DETAILS: MongoError: bad auth : Authentication failed.
+    at MessageStream.messageHandler (D:\projects\NodeJS-course\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (D:\projects\NodeJS-course\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\projects\NodeJS-course\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at MessageStream.Writable.write (_stream_writable.js:303:10)
+    at TLSSocket.ondata (_stream_readable.js:712:22)
+    at TLSSocket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:302:12)
+    at readableAddChunk (_stream_readable.js:278:9)
+    at TLSSocket.Readable.push (_stream_readable.js:217:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:186:23)
+error: 
+    TIME: Mon Oct 26 2020 10:31:42 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967b5d7262811af0de6bde
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\boards\board.router.js:19:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Mon Oct 26 2020 10:31:43 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967b5e7262811af0de6bdf/tasks/5f967b5e7262811af0de6be1
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Mon Oct 26 2020 10:31:43 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967b5e7262811af0de6bdf/tasks/5f967b5e7262811af0de6be0
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Mon Oct 26 2020 10:31:43 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967b5e7262811af0de6bdf/tasks/5f967b5e7262811af0de6be2
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Mon Oct 26 2020 10:31:43 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967b5e7262811af0de6bdf/tasks/5f967b5e7262811af0de6be3
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Mon Oct 26 2020 10:31:43 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967b5e7262811af0de6bdf/tasks/5f967b5e7262811af0de6be4
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Mon Oct 26 2020 10:31:46 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967b5f7262811af0de6be5/tasks/5f967b5f7262811af0de6be6
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    

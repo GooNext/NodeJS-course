@@ -1,41 +1,65 @@
 const router = require('express').Router();
-const User = require('./user.model');
+const { User } = require('./user.model');
 const usersService = require('./user.service');
 
-router.route('/').get(async (req, res) => {
-  const users = await usersService.getAll();
-  // map user fields to exclude secret fields like "password"
-  res.json(users.map(User.toResponse));
+router.route('/').get(async (req, res, next) => {
+  try {
+    const users = await usersService.getAll();
+    res.status(200).json(users.map(user => User.toResponse(user)));
+  } catch (err) {
+    return next(err);
+  }
 });
 
-router.route('/:id').get(async (req, res) => {
-  const user = await usersService.get(req.params.id);
-  if (user) res.status(200).send(User.toResponse(user));
-  else res.sendStatus(400);
+router.route('/:id').get(async (req, res, next) => {
+  try {
+    const user = await usersService.getUser(req.params.id);
+    if (user) res.status(200).send(User.toResponse(user));
+    else {
+      const err = new Error('Not Found');
+      err.status = 404;
+      return next(err);
+    }
+  } catch (err) {
+    return next(err);
+  }
 });
 
-router.route('/').post(async (req, res) => {
-  const user = new User(req.body);
-  await usersService.create(user);
-  res.status(200).send(User.toResponse(user));
+router.route('/').post(async (req, res, next) => {
+  try {
+    const user = await usersService.createUser(req.body);
+    res.status(200).send(User.toResponse(user));
+  } catch (err) {
+    return next(err);
+  }
 });
 
-router.route('/:id').put(async (req, res) => {
-  const user = {
-    ...req.body,
-    id: req.params.id
-  };
-  const isUpdated = await usersService.update(user);
-  if (isUpdated) res.status(200).send(User.toResponse(user));
-  else res.sendStatus(400);
+router.route('/:id').put(async (req, res, next) => {
+  try {
+    const user = await usersService.updateUser(req.params.id, req.body);
+    if (user) res.status(200).send(User.toResponse(user));
+    else {
+      const err = new Error('Not Found');
+      err.status = 404;
+      return next(err);
+    }
+  } catch (err) {
+    return next(err);
+  }
 });
 
-router.route('/:id').delete(async (req, res) => {
-  const user = await usersService.remove(req.params.id);
-  if (user) {
-    res.sendStatus(204);
-  } else {
-    res.sendStatus(404);
+router.route('/:id').delete(async (req, res, next) => {
+  try {
+    const message = await usersService.deleteUser(req.params.id);
+
+    if (message) res.status(204).send(message);
+    else {
+      const err = new Error('Not Found');
+      err.status = 404;
+      return next(err);
+    }
+  } catch (err) {
+    return next(err);
   }
 });
 
