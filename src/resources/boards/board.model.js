@@ -31,7 +31,7 @@ const boardSchema = new Schema(
     },
     columns: [columnSchema]
   },
-  { versionKey: false, _id: false }
+  { versionKey: false }
 );
 boardSchema.statics.toResponse = board => {
   const { _id, title, columns } = board;
