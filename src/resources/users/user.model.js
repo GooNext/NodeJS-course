@@ -11,14 +11,13 @@ const userSchema = new Schema(
     },
     login: {
       type: String,
-      unique: false,
+      unique: true,
       required: true
     },
     password: {
       type: String,
       unique: false,
       required: true
-      // select: false
     }
   },
   { versionKey: false }

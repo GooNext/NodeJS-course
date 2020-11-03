@@ -25,7 +25,7 @@ function logRequest(req, res, next) {
   const date = new Date();
 
   if (req.body.password) {
-    // hide sensitive data
+    // hide password
     Object.defineProperty(req.body, 'password', {
       enumerable: false,
       value: req.body.password
@@ -46,7 +46,7 @@ function logRequest(req, res, next) {
     }
 `
   );
-
+  // show password for encryption
   if (req.body.password) {
     Object.defineProperty(req.body, 'password', {
       enumerable: true,
@@ -59,6 +59,14 @@ function logRequest(req, res, next) {
 
 function logError(error, req, res, next) {
   const date = new Date();
+
+  if (req.body.password) {
+    // hide password
+    Object.defineProperty(req.body, 'password', {
+      enumerable: false,
+      value: req.body.password
+    });
+  }
 
   winstonLogger.log(
     'error',
@@ -77,6 +85,14 @@ function logError(error, req, res, next) {
     ${error.stack}
     `
   );
+  // show password for encryption
+  if (req.body.password) {
+    Object.defineProperty(req.body, 'password', {
+      enumerable: true,
+      value: req.body.password
+    });
+  }
+
   next();
 }
 
@@ -107,10 +123,26 @@ function logUncaughtException(err, origin) {
   );
 }
 
+function logAuth(login, token, payload) {
+  const date = new Date();
+
+  winstonLogger.log(
+    'info',
+    `
+  YOU LOGGED-IN
+  TIME: ${date.toString()}
+  LOGIN: ${login},
+  TOKEN: ${token},
+  PAYLOAD: ${JSON.stringify(payload)}
+  `
+  );
+}
+
 module.exports = {
   logRequest,
   logError,
   logUnhandledRejection,
   logUncaughtException,
-  winstonLogger
+  winstonLogger,
+  logAuth
 };

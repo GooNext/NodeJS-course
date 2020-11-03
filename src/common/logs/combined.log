@@ -1232,3 +1232,1883 @@ info:
     QUERY PARAMS: {}
     BODY: {"title":"string","order":0,"description":"string","userId":"string","boardId":"string","columnId":"string"}
 
+info: 
+    TIME: Wed Oct 28 2020 12:04:42 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:43 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"TEST_USER","login":"test_user"}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:43 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /users/5f99342b16b05307d8902ea1
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:43 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /users/5f99342b16b05307d8902ea1
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:43 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"TEST_USER","login":"test_user"}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:44 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /users/5f99342b16b05307d8902ea2
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:44 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"TEST_USER","login":"test_user"}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:44 GMT+0300 (Москва, стандартное время)
+    TYPE: PUT
+    URL: /users/5f99342c16b05307d8902ea3
+    QUERY PARAMS: {}
+    BODY: {"name":"Autotest updated TEST_USER","login":"test_user","id":"5f99342c16b05307d8902ea3"}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:44 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /users/5f99342c16b05307d8902ea3
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:44 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /users/5f99342c16b05307d8902ea3
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:45 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"TEST_USER","login":"test_user"}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:45 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /users/5f99342d16b05307d8902ea4
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:45 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"TEST_USER","login":"test_user"}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:46 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:46 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5f99342e16b05307d8902ea6/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"5f99342d16b05307d8902ea5","boardId":"5f99342e16b05307d8902ea6"}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:46 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5f99342e16b05307d8902ea6/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"5f99342d16b05307d8902ea5","boardId":"5f99342e16b05307d8902ea6"}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:46 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /users/5f99342d16b05307d8902ea5
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:46 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99342e16b05307d8902ea6/tasks/5f99342e16b05307d8902ea7
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:47 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99342e16b05307d8902ea6/tasks/5f99342e16b05307d8902ea8
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:47 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5f99342e16b05307d8902ea6/tasks/5f99342e16b05307d8902ea7
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:47 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5f99342e16b05307d8902ea6/tasks/5f99342e16b05307d8902ea8
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:47 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5f99342e16b05307d8902ea6
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:48 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:48 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:48 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:48 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967bfe7262811af0de6beb
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:48 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:49 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5f99343016b05307d8902eaa
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:49 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:49 GMT+0300 (Москва, стандартное время)
+    TYPE: PUT
+    URL: /boards/5f99343116b05307d8902eab
+    QUERY PARAMS: {}
+    BODY: {"id":"5f99343116b05307d8902eab","title":"Autotest updated board","columns":[{"title":"Backlog","order":1,"id":"2a7fcd2c-346c-484e-8ca4-ccf38d1ccf31"},{"title":"Sprint","order":2,"id":"9bb3df19-5af8-43f2-8232-f729102c176d"}]}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:49 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343116b05307d8902eab
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:49 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5f99343116b05307d8902eab
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:50 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:51 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5f99343216b05307d8902eac
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:51 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343216b05307d8902eac
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+error: 
+    TIME: Wed Oct 28 2020 12:04:51 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343216b05307d8902eac
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\boards\board.router.js:19:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+info: 
+    TIME: Wed Oct 28 2020 12:04:51 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:51 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5f99343316b05307d8902ead/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"5f99343316b05307d8902ead","userId":null,"columnId":null}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:51 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5f99343316b05307d8902ead/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"5f99343316b05307d8902ead","userId":null,"columnId":null}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:51 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5f99343316b05307d8902ead/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"5f99343316b05307d8902ead","userId":null,"columnId":null}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:51 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5f99343316b05307d8902ead/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"5f99343316b05307d8902ead","userId":null,"columnId":null}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:51 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5f99343316b05307d8902ead/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"5f99343316b05307d8902ead","userId":null,"columnId":null}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:52 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343316b05307d8902ead/tasks/5f99343316b05307d8902eae
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:52 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343316b05307d8902ead/tasks/5f99343316b05307d8902eaf
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:52 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343316b05307d8902ead/tasks/5f99343316b05307d8902eb0
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:52 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343316b05307d8902ead/tasks/5f99343316b05307d8902eb2
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:52 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343316b05307d8902ead/tasks/5f99343316b05307d8902eb1
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:53 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5f99343316b05307d8902ead
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:53 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343316b05307d8902ead/tasks/5f99343316b05307d8902eae
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:53 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343316b05307d8902ead/tasks/5f99343316b05307d8902eaf
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:53 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343316b05307d8902ead/tasks/5f99343316b05307d8902eb0
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:53 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343316b05307d8902ead/tasks/5f99343316b05307d8902eb1
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:53 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343316b05307d8902ead/tasks/5f99343316b05307d8902eb2
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+error: 
+    TIME: Wed Oct 28 2020 12:04:53 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343316b05307d8902ead/tasks/5f99343316b05307d8902eae
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Wed Oct 28 2020 12:04:53 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343316b05307d8902ead/tasks/5f99343316b05307d8902eaf
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Wed Oct 28 2020 12:04:53 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343316b05307d8902ead/tasks/5f99343316b05307d8902eb0
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Wed Oct 28 2020 12:04:53 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343316b05307d8902ead/tasks/5f99343316b05307d8902eb1
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Wed Oct 28 2020 12:04:54 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343316b05307d8902ead/tasks/5f99343316b05307d8902eb2
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+info: 
+    TIME: Wed Oct 28 2020 12:04:54 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5f99343016b05307d8902ea9
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:54 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:54 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5f99343616b05307d8902eb3/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:55 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343616b05307d8902eb3/tasks
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:55 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343616b05307d8902eb3/tasks
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:55 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343616b05307d8902eb3/tasks/5f99343616b05307d8902eb4
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:55 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5f99343616b05307d8902eb3/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:56 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5f99343616b05307d8902eb3/tasks/5f99343716b05307d8902eb5
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:56 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5f99343616b05307d8902eb3/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:56 GMT+0300 (Москва, стандартное время)
+    TYPE: PUT
+    URL: /boards/5f99343616b05307d8902eb3/tasks/5f99343816b05307d8902eb6
+    QUERY PARAMS: {}
+    BODY: {"id":"5f99343816b05307d8902eb6","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"5f99343616b05307d8902eb3","columnId":null}
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:56 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343616b05307d8902eb3/tasks/5f99343816b05307d8902eb6
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:56 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343616b05307d8902eb3/tasks/5f99343616b05307d8902eb4
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:57 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5f99343616b05307d8902eb3/tasks/5f99343616b05307d8902eb4
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Wed Oct 28 2020 12:04:57 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343616b05307d8902eb3/tasks/5f99343616b05307d8902eb4
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+error: 
+    TIME: Wed Oct 28 2020 12:04:57 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f99343616b05307d8902eb3/tasks/5f99343616b05307d8902eb4
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+info: 
+    TIME: Wed Oct 28 2020 12:04:57 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5f99343616b05307d8902eb3
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Wed Oct 28 2020 12:21:57 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"string","login":"string"}
+
+info: 
+    TIME: Wed Oct 28 2020 12:21:57 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"string","login":"string"}
+
+info: 
+    TIME: Wed Oct 28 2020 12:21:57 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"string","login":"string"}
+
+info: 
+    TIME: Wed Oct 28 2020 12:21:58 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"string","login":"string"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:24 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:25 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"TEST_USER","login":"test_user"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:25 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /users/5fa17b156c94be23806cb9f9
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:25 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /users/5fa17b156c94be23806cb9f9
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:25 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"TEST_USER","login":"test_user"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:26 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /users/5fa17b156c94be23806cb9fa
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:26 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"TEST_USER","login":"test_user"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:26 GMT+0300 (Москва, стандартное время)
+    TYPE: PUT
+    URL: /users/5fa17b166c94be23806cb9fb
+    QUERY PARAMS: {}
+    BODY: {"name":"Autotest updated TEST_USER","login":"test_user","id":"5fa17b166c94be23806cb9fb"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:27 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /users/5fa17b166c94be23806cb9fb
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:27 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /users/5fa17b166c94be23806cb9fb
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:27 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"TEST_USER","login":"test_user"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:27 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /users/5fa17b176c94be23806cb9fc
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:28 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"TEST_USER","login":"test_user"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:28 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:28 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17b186c94be23806cb9fe/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"5fa17b186c94be23806cb9fd","boardId":"5fa17b186c94be23806cb9fe"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:28 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17b186c94be23806cb9fe/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"5fa17b186c94be23806cb9fd","boardId":"5fa17b186c94be23806cb9fe"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:29 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /users/5fa17b186c94be23806cb9fd
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:29 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b186c94be23806cb9fe/tasks/5fa17b186c94be23806cba00
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:29 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b186c94be23806cb9fe/tasks/5fa17b186c94be23806cb9ff
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:29 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17b186c94be23806cb9fe/tasks/5fa17b186c94be23806cba00
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:29 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17b186c94be23806cb9fe/tasks/5fa17b186c94be23806cb9ff
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:30 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17b186c94be23806cb9fe
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:30 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:31 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:31 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:31 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967bfe7262811af0de6beb
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:31 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:31 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17b1b6c94be23806cba02
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:32 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:32 GMT+0300 (Москва, стандартное время)
+    TYPE: PUT
+    URL: /boards/5fa17b1c6c94be23806cba03
+    QUERY PARAMS: {}
+    BODY: {"id":"5fa17b1c6c94be23806cba03","title":"Autotest updated board","columns":[{"title":"Backlog","order":1,"id":"eb5b6e44-7831-48b9-a751-7e6da1632933"},{"title":"Sprint","order":2,"id":"0b827287-4774-4458-945f-aeab74a238ec"}]}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:32 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1c6c94be23806cba03
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:32 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17b1c6c94be23806cba03
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:33 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:33 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17b1d6c94be23806cba04
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:33 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1d6c94be23806cba04
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+error: 
+    TIME: Tue Nov 03 2020 18:45:34 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1d6c94be23806cba04
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\boards\board.router.js:19:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+info: 
+    TIME: Tue Nov 03 2020 18:45:34 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:34 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"5fa17b1e6c94be23806cba05","userId":null,"columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:34 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"5fa17b1e6c94be23806cba05","userId":null,"columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:34 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"5fa17b1e6c94be23806cba05","userId":null,"columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:34 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"5fa17b1e6c94be23806cba05","userId":null,"columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:34 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"5fa17b1e6c94be23806cba05","userId":null,"columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:34 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks/5fa17b1e6c94be23806cba06
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:34 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks/5fa17b1e6c94be23806cba07
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:34 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks/5fa17b1e6c94be23806cba08
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:34 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks/5fa17b1e6c94be23806cba09
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:34 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks/5fa17b1e6c94be23806cba0a
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:35 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17b1e6c94be23806cba05
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:35 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks/5fa17b1e6c94be23806cba06
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:35 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks/5fa17b1e6c94be23806cba07
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:35 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks/5fa17b1e6c94be23806cba08
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:35 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks/5fa17b1e6c94be23806cba09
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:35 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks/5fa17b1e6c94be23806cba0a
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+error: 
+    TIME: Tue Nov 03 2020 18:45:35 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks/5fa17b1e6c94be23806cba06
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Tue Nov 03 2020 18:45:35 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks/5fa17b1e6c94be23806cba07
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Tue Nov 03 2020 18:45:35 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks/5fa17b1e6c94be23806cba09
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Tue Nov 03 2020 18:45:35 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks/5fa17b1e6c94be23806cba08
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Tue Nov 03 2020 18:45:35 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b1e6c94be23806cba05/tasks/5fa17b1e6c94be23806cba0a
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+info: 
+    TIME: Tue Nov 03 2020 18:45:35 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17b1a6c94be23806cba01
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:36 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:36 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17b206c94be23806cba0b/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:37 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b206c94be23806cba0b/tasks
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:37 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b206c94be23806cba0b/tasks
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:37 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b206c94be23806cba0b/tasks/5fa17b206c94be23806cba0c
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:38 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17b206c94be23806cba0b/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:38 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17b206c94be23806cba0b/tasks/5fa17b226c94be23806cba0d
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:38 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17b206c94be23806cba0b/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:39 GMT+0300 (Москва, стандартное время)
+    TYPE: PUT
+    URL: /boards/5fa17b206c94be23806cba0b/tasks/5fa17b226c94be23806cba0e
+    QUERY PARAMS: {}
+    BODY: {"id":"5fa17b226c94be23806cba0e","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"5fa17b206c94be23806cba0b","columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:39 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b206c94be23806cba0b/tasks/5fa17b226c94be23806cba0e
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:39 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b206c94be23806cba0b/tasks/5fa17b206c94be23806cba0c
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:39 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17b206c94be23806cba0b/tasks/5fa17b206c94be23806cba0c
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:39 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b206c94be23806cba0b/tasks/5fa17b206c94be23806cba0c
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+error: 
+    TIME: Tue Nov 03 2020 18:45:40 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17b206c94be23806cba0b/tasks/5fa17b206c94be23806cba0c
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+info: 
+    TIME: Tue Nov 03 2020 18:45:40 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17b206c94be23806cba0b
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:45:59 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /login
+    QUERY PARAMS: {}
+    BODY: {"login":"string"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:46:00 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /login
+    QUERY PARAMS: {}
+    BODY: {"login":"string"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:46:14 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"string","login":"string"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:46:14 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"string","login":"string"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:46:15 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"string","login":"string"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:46:15 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"string","login":"string"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:46:15 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"string","login":"string"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:46:16 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"string","login":"string"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:46:19 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /login
+    QUERY PARAMS: {}
+    BODY: {"login":"string"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:51 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:51 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"TEST_USER","login":"test_user"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:52 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /users/5fa17c1f29460e27cc58d67d
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:52 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /users/5fa17c1f29460e27cc58d67d
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:52 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"TEST_USER","login":"test_user"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:52 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /users/5fa17c2029460e27cc58d67e
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:53 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"TEST_USER","login":"test_user"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:53 GMT+0300 (Москва, стандартное время)
+    TYPE: PUT
+    URL: /users/5fa17c2129460e27cc58d67f
+    QUERY PARAMS: {}
+    BODY: {"name":"Autotest updated TEST_USER","login":"test_user","id":"5fa17c2129460e27cc58d67f"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:53 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /users/5fa17c2129460e27cc58d67f
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:53 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /users/5fa17c2129460e27cc58d67f
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:54 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"TEST_USER","login":"test_user"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:54 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /users/5fa17c2229460e27cc58d680
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:54 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /users
+    QUERY PARAMS: {}
+    BODY: {"name":"TEST_USER","login":"test_user"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:55 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:55 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17c2329460e27cc58d682/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"5fa17c2229460e27cc58d681","boardId":"5fa17c2329460e27cc58d682"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:55 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17c2329460e27cc58d682/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"5fa17c2229460e27cc58d681","boardId":"5fa17c2329460e27cc58d682"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:55 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /users/5fa17c2229460e27cc58d681
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:56 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2329460e27cc58d682/tasks/5fa17c2329460e27cc58d683
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:56 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2329460e27cc58d682/tasks/5fa17c2329460e27cc58d684
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:56 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17c2329460e27cc58d682/tasks/5fa17c2329460e27cc58d683
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:56 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17c2329460e27cc58d682/tasks/5fa17c2329460e27cc58d684
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:56 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17c2329460e27cc58d682
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:57 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:57 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:57 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:58 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5f967bfe7262811af0de6beb
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:58 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:58 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17c2629460e27cc58d686
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:58 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:59 GMT+0300 (Москва, стандартное время)
+    TYPE: PUT
+    URL: /boards/5fa17c2629460e27cc58d687
+    QUERY PARAMS: {}
+    BODY: {"id":"5fa17c2629460e27cc58d687","title":"Autotest updated board","columns":[{"title":"Backlog","order":1,"id":"35e4e026-e385-4bde-aa96-90cad0556b3b"},{"title":"Sprint","order":2,"id":"6712d3f3-f9dc-4f68-85eb-6505617a7600"}]}
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:59 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2629460e27cc58d687
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:59 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17c2629460e27cc58d687
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:49:59 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:00 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17c2729460e27cc58d688
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:00 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2729460e27cc58d688
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+error: 
+    TIME: Tue Nov 03 2020 18:50:00 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2729460e27cc58d688
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\boards\board.router.js:19:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+info: 
+    TIME: Tue Nov 03 2020 18:50:00 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:00 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17c2829460e27cc58d689/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"5fa17c2829460e27cc58d689","userId":null,"columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:00 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17c2829460e27cc58d689/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"5fa17c2829460e27cc58d689","userId":null,"columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:00 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17c2829460e27cc58d689/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"5fa17c2829460e27cc58d689","userId":null,"columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:00 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17c2829460e27cc58d689/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"5fa17c2829460e27cc58d689","userId":null,"columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:00 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17c2829460e27cc58d689/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"5fa17c2829460e27cc58d689","userId":null,"columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:01 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2829460e27cc58d689/tasks/5fa17c2829460e27cc58d68a
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:01 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2829460e27cc58d689/tasks/5fa17c2829460e27cc58d68b
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:01 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2829460e27cc58d689/tasks/5fa17c2829460e27cc58d68c
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:01 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2829460e27cc58d689/tasks/5fa17c2829460e27cc58d68d
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:01 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2829460e27cc58d689/tasks/5fa17c2829460e27cc58d68e
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:01 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17c2829460e27cc58d689
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:01 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2829460e27cc58d689/tasks/5fa17c2829460e27cc58d68a
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:01 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2829460e27cc58d689/tasks/5fa17c2829460e27cc58d68b
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:01 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2829460e27cc58d689/tasks/5fa17c2829460e27cc58d68c
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:01 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2829460e27cc58d689/tasks/5fa17c2829460e27cc58d68d
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:01 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2829460e27cc58d689/tasks/5fa17c2829460e27cc58d68e
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+error: 
+    TIME: Tue Nov 03 2020 18:50:02 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2829460e27cc58d689/tasks/5fa17c2829460e27cc58d68a
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Tue Nov 03 2020 18:50:02 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2829460e27cc58d689/tasks/5fa17c2829460e27cc58d68b
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Tue Nov 03 2020 18:50:02 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2829460e27cc58d689/tasks/5fa17c2829460e27cc58d68d
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Tue Nov 03 2020 18:50:02 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2829460e27cc58d689/tasks/5fa17c2829460e27cc58d68c
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+error: 
+    TIME: Tue Nov 03 2020 18:50:02 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2829460e27cc58d689/tasks/5fa17c2829460e27cc58d68e
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+info: 
+    TIME: Tue Nov 03 2020 18:50:02 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17c2529460e27cc58d685
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:02 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:02 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17c2a29460e27cc58d68f/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:03 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2a29460e27cc58d68f/tasks
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:03 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2a29460e27cc58d68f/tasks
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:04 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2a29460e27cc58d68f/tasks/5fa17c2a29460e27cc58d690
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:04 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17c2a29460e27cc58d68f/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:04 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17c2a29460e27cc58d68f/tasks/5fa17c2c29460e27cc58d691
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:04 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /boards/5fa17c2a29460e27cc58d68f/tasks
+    QUERY PARAMS: {}
+    BODY: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:05 GMT+0300 (Москва, стандартное время)
+    TYPE: PUT
+    URL: /boards/5fa17c2a29460e27cc58d68f/tasks/5fa17c2c29460e27cc58d692
+    QUERY PARAMS: {}
+    BODY: {"id":"5fa17c2c29460e27cc58d692","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"5fa17c2a29460e27cc58d68f","columnId":null}
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:05 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2a29460e27cc58d68f/tasks/5fa17c2c29460e27cc58d692
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:05 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2a29460e27cc58d68f/tasks/5fa17c2a29460e27cc58d690
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:05 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17c2a29460e27cc58d68f/tasks/5fa17c2a29460e27cc58d690
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:50:05 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2a29460e27cc58d68f/tasks/5fa17c2a29460e27cc58d690
+    QUERY PARAMS: {}
+    BODY: no body for GET
+
+error: 
+    TIME: Tue Nov 03 2020 18:50:06 GMT+0300 (Москва, стандартное время)
+    TYPE: GET
+    URL: /boards/5fa17c2a29460e27cc58d68f/tasks/5fa17c2a29460e27cc58d690
+    BODY: no body for GET
+    ERROR STATUS: 404
+    ERROR MESSAGE: Not Found
+    ERROR DETAILS:
+    Error: Not Found
+    at D:\projects\NodeJS-course\src\resources\tasks\task.router.js:33:19
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9)
+    
+info: 
+    TIME: Tue Nov 03 2020 18:50:06 GMT+0300 (Москва, стандартное время)
+    TYPE: DELETE
+    URL: /boards/5fa17c2a29460e27cc58d68f
+    QUERY PARAMS: {}
+    BODY: no body for DELETE
+
+info: 
+    TIME: Tue Nov 03 2020 18:53:51 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /login
+    QUERY PARAMS: {}
+    BODY: {"login":"string"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:53:53 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /login
+    QUERY PARAMS: {}
+    BODY: {"login":"string"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:53:54 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /login
+    QUERY PARAMS: {}
+    BODY: {"login":"string"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:54:12 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /login
+    QUERY PARAMS: {}
+    BODY: {"login":"string"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:54:13 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /login
+    QUERY PARAMS: {}
+    BODY: {"login":"string"}
+
+info: 
+    TIME: Tue Nov 03 2020 18:58:32 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /login
+    QUERY PARAMS: {}
+    BODY: {"login":"string"}
+
+error: 
+  TIME: Tue Nov 03 2020 18:58:32 GMT+0300 (Москва, стандартное время)
+  ERROR: TypeError: logAuth is not a function
+  ERROR TYPE: uncaughtException
+  ERROR DETAILS:
+  TypeError: logAuth is not a function
+    at D:\projects\NodeJS-course\src\resources\login\login.router.js:30:11
+    at D:\projects\NodeJS-course\node_modules\bcryptjs\dist\bcrypt.js:297:21
+    at D:\projects\NodeJS-course\node_modules\bcryptjs\dist\bcrypt.js:1353:21
+    at Immediate.next (D:\projects\NodeJS-course\node_modules\bcryptjs\dist\bcrypt.js:1233:21)
+    at processImmediate (internal/timers.js:456:21)
+  
+info: 
+    TIME: Tue Nov 03 2020 19:06:26 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /login
+    QUERY PARAMS: {}
+    BODY: {"login":"string"}
+
+error: 
+  TIME: Tue Nov 03 2020 19:06:27 GMT+0300 (Москва, стандартное время)
+  ERROR: TypeError: logAuth is not a function
+  ERROR TYPE: uncaughtException
+  ERROR DETAILS:
+  TypeError: logAuth is not a function
+    at D:\projects\NodeJS-course\src\resources\login\login.router.js:30:11
+    at D:\projects\NodeJS-course\node_modules\bcryptjs\dist\bcrypt.js:297:21
+    at D:\projects\NodeJS-course\node_modules\bcryptjs\dist\bcrypt.js:1353:21
+    at Immediate.next (D:\projects\NodeJS-course\node_modules\bcryptjs\dist\bcrypt.js:1233:21)
+    at processImmediate (internal/timers.js:456:21)
+  
+info: 
+    TIME: Tue Nov 03 2020 19:07:31 GMT+0300 (Москва, стандартное время)
+    TYPE: POST
+    URL: /login
+    QUERY PARAMS: {}
+    BODY: {"login":"string"}
+
+info: 
+  YOU LOGGED-IN
+  TIME: Tue Nov 03 2020 19:07:31 GMT+0300 (Москва, стандартное время)
+  LOGIN: string,
+  TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1Zjk2N2I5ZjcyNjI4MTFhZjBkZTZiZTkiLCJsb2dpbiI6InN0cmluZyIsImlhdCI6MTYwNDQxOTY1MX0.TNGCYW3YeyR8HJXYG9_z5SeU3jtF65ybTfXsbNjA7no,
+  PAYLOAD: {"userId":"5f967b9f7262811af0de6be9","login":"string","iat":1604419651}
+  
