@@ -45,11 +45,6 @@ router.route('/:id').put(async (req, res, next) => {
 
 router.route('/:id').delete(async (req, res, next) => {
   try {
-    /*   while (TASKS.findIndex(task => task.boardId === req.params.id) + 1) {
-      const index = TASKS.findIndex(task => task.boardId === req.params.id);
-      taskService.deleteTask(req.params.id, TASKS[index].id);
-    } */
-
     const message = await boardService.deleteBoard(req.params.id);
     if (message) res.status(204).send(message);
     else {

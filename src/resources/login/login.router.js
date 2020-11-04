@@ -2,11 +2,9 @@ const router = require('express').Router();
 const loginService = require('./login.service');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-const { logAuth } = require('../../common/logger');
 
 router.route('/').post(async (req, res, next) => {
   try {
-    // JSON.parse(req.body);
     const user = await loginService.getLoginPasswordUser(req.body.login);
     if (user && req.body.login && req.body.password) {
       bcrypt.compare(req.body.password, user.password, (err, result) => {
@@ -25,17 +23,13 @@ router.route('/').post(async (req, res, next) => {
               expiresIn: '1h'
             }
           );
-
-          const payload = jwt.verify(token, process.env.JWT_SECRET_KEY);
-          logAuth(req.body.login, token, payload);
-
-          res.status(200).send({ token });
+          return res.status(200).send({ token });
         }
       });
     } else {
-      const err = new Error('Incorrect login or password');
-      err.status = 403;
-      return next(err);
+      const errors = new Error('User not found');
+      errors.status = 403;
+      return next(errors);
     }
   } catch (err) {
     return next(err);

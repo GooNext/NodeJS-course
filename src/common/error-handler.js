@@ -1,7 +1,7 @@
 const { logUnhandledRejection, logUncaughtException } = require('./logger');
 
 function handleErrors(err, req, res, next) {
-  err.status = err.status || 500;
+  err.status = err.status || 401;
   err.message = err.message || 'Internal Server Error';
   res.status(err.status).send({
     error: {

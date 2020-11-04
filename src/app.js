@@ -12,6 +12,7 @@ const {
   handleUncaughtException,
   handleUnhandledPromiseRejection
 } = require('./common/error-handler');
+const logAuth = require('./common/logAuth');
 
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
@@ -30,10 +31,10 @@ app.use('/', (req, res, next) => {
 
 app.use(logRequest);
 
-app.use('/users', userRouter);
-app.use('/boards', boardRouter);
-app.use('/boards/:boardId/tasks', taskRouter);
 app.use('/login', loginRouter);
+app.use('/users', logAuth, userRouter);
+app.use('/boards', logAuth, boardRouter);
+app.use('/boards/:boardId/tasks', logAuth, taskRouter);
 
 app.use(handleErrors, logError);
 
